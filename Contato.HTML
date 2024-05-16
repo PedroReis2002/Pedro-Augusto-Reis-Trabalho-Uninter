@@ -26,6 +26,29 @@
             padding: 20px;
         }
 
+        /* Cria a estética do botão*/
+        .button {
+            border: none;
+            color: #27374D;
+            border: 2px solid #27374D;
+            background-color: #DDE6ED;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 178px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        /* Adiciona cor a animação presente nos botões quando o mouse passa por cima*/
+        .button:hover{
+            background-color: #27374D;
+            color: #DDE6ED;
+        }
+        
         /* Serve para permitir que o usuário consiga escrever no containers*/
         input[type=text], select, textarea {
             width: 100%;
@@ -38,7 +61,7 @@
         }
 
         /* Cria a estética do botão*/
-        .button {
+        .buttonEnviar {
             border: none;
             color: #27374D;
             border: 2px solid #27374D;
@@ -55,7 +78,7 @@
         }
 
         /* Adiciona cor a animação presente nos botões quando o mouse passa por cima*/
-        .button:hover{
+        .buttonEnviar:hover{
             background-color: #27374D;
             color: #DDE6ED;
         }
@@ -135,6 +158,29 @@
 
     <img src="Imagens/twitter.png" alt="Twitter" class="imagem">
 
+    <br><br><br>
+
+    <!-- Botão que leva ao GitHub -->
+    <a href="https://github.com/PedroReis2002">
+        <button class="button">
+            GitHub 
+        </button>
+    </a>
+
+    <!-- Botão que leva a página "Formação"-->
+    <a href="Formação.HTML">
+        <button class="button">
+            Formação
+        </button>
+    </a>
+
+    <!-- Botão que leva a página "Contato" -->
+    <a href="index.html">
+        <button class="button">
+            Sobre mim
+        </button>
+    </a>
+
     <!-- Cria um subtítulo para introduzir a parte de comentários -->
     <p class="b1">
         Ou deixe um comentário:
@@ -152,7 +198,7 @@
             <p class="b3">Digite seu comentário</p>
             <textarea placeholder="Qual o seu comentário?" style="height:200px"></textarea>
 
-            <button class="button"> Enviar </button>
+            <button class="buttonEnviar"> Enviar </button>
         </form>
     </div>
 
